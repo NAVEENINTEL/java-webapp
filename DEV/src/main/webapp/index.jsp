@@ -6,6 +6,7 @@
 <a href="#">This is a dead link</a>
 <a href="https://www.freecodecamp.org">This is a live link to freeCodeCamp</a>
 <a href="https://html.com/attributes/a-href/">more with a href attribute</a>
+ <h2>Signup form</h2>
  <form>
   <label for="username">Username:</label>
   <input type="text" name="username" id="username" />
@@ -22,8 +23,6 @@
   </datalist>
 
   <input type="submit" value="Submit" />
-  <input type="color" />
-  <input type="checkbox" name="correct" value="correct" />Correct
 </form>
 
   
