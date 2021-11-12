@@ -4,7 +4,7 @@
 <p>Devops first staging and Prod deploy</p>
 <p>Devops first staging2 and Prod2 deploy</p>
 <h2><a href="#">Login</a></h2>
- <h2>Signup form</h2>
+ <h2>Registration form</h2>
  <form>
   <label for="username">Username:</label>
   <input type="text" name="username" id="username" />
