@@ -4,7 +4,6 @@
 </head>
 <body>
 <h2>JLogin here/h2>
- <h2>Login form</h2>
  <form>
   <label for="username">Username:</label>
   <input type="text" name="username" id="username" />
