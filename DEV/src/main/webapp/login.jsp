@@ -3,7 +3,6 @@
   <title>Login</title>
 </head>
 <body>
-<h2>JLogin here/h2>
  <form>
   <label for="username">Username:</label>
   <input type="text" name="username" id="username" />
