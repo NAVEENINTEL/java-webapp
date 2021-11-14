@@ -3,7 +3,7 @@
         stages {
             stage('Build Application') {
                 steps {
-                    bat 'maven clean install -f DEV/pom.xml'
+                    bat 'mvn clean install -f DEV/pom.xml'
                 }
                 post {
                     success {
