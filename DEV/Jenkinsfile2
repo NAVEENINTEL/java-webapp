@@ -14,7 +14,14 @@
             }
             stage('Deploy in Staging Environment'){
                 steps{
-                    build job: 'Deploy_Application_Staging_Env'
+                    build job: 'Deploy QA ENv'
+     
+                }
+                
+            }
+            stage('Automate Testing  in Staging Environment'){
+                steps{
+                    build job: 'QA Automation'
      
                 }
                 
@@ -24,7 +31,7 @@
                     timeout(time:5, unit:'DAYS'){
                         input message:'Approve PRODUCTION Deployment?'
                     }
-                    build job: 'Deploy_Application_Prod_Env'
+                    build job: 'Deploy in Prod'
                 }
             }
         }
