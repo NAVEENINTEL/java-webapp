@@ -3,7 +3,7 @@
   <title>Registration form</title>
 </head>
 <body>
-<h2>Jenkins CI/CD for java app</h2>
+<h2>Jenkins CI/CD for java web app</h2>
 <p>Devops first staging and Prod deploy</p>
 <p>Devops first staging2 and Prod2 deploy</p>
 <h2><a href="login.jsp">Login</a></h2>
