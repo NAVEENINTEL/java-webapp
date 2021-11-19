@@ -23,10 +23,6 @@
     <option value="Option3"></option>
   </datalist>
 
-  <input type="submit" value="Submit" />
-  <input type="submit" value="Submit" />
-  <input type="submit" value="Submit" />
-  <input type="submit" value="Submit" />
 </form>
 
   
