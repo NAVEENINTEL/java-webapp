@@ -4,6 +4,9 @@ COMMNADS:
 Installing required libraries for automation:
 
 pip install -r requirements.txt
+coverage run test.py
+coverage report -m
+coverage html
 
 Creating SSH Keys:
 ssh-keygen -t rsa -b 4096 -C "naveenintel86@gmail.com"
