@@ -1,4 +1,11 @@
 #!/bin/bash
+sudo apt update
+java -version
+sudo apt install default-jre
+java -version
+sudo apt install default-jdk
+java -version
+
 sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
