@@ -5,4 +5,4 @@ curl -s https://get.docker.io/ubuntu/ | sudo sh
 sudo docker pull orchardup/jenkins
 
 # Start jenkins container
-sudo docker run -d -p 80:5050 orchardup/jenkins
+sudo docker run -d -p 81:5050 orchardup/jenkins
