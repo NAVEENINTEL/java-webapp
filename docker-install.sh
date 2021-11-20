@@ -27,3 +27,5 @@ sudo apt-get -y install docker-engine docker-compose
 
 # add current user to docker group so there is no need to use sudo when running docker
 sudo usermod -aG docker $(whoami)
+
+docker run -d -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-jdk11
