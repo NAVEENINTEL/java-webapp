@@ -1,8 +1,17 @@
-# Install Docker
-curl -s https://get.docker.io/ubuntu/ | sudo sh
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
 
-# Pull jenkins docker image trusted build
-sudo docker pull orchardup/jenkins
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 
-# Start jenkins container
-sudo docker run -d -p 81:5050 orchardup/jenkins
+sudo apt update
+
+sudo apt install jenkins
+
+sudo systemctl start jenkins
+
+sudo systemctl status jenkins
+
+sudo ufw allow 5050
+
+sudo ufw status
+
+
