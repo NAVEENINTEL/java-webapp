@@ -1,2 +1,2 @@
 # java-webapp
-Java web app for devops practice
+Java web app for devops practice.
