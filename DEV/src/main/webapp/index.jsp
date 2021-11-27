@@ -4,8 +4,6 @@
 </head>
 <body>
 <h2>Jenkins CI/CD pipeline for java web app</h2>
-<p>Devops first staging and Prod deploy</p>
-<p>Devops first staging2 and Prod2 deploy</p>
 <h2><a href="login.jsp">Login</a></h2>
  <h2>Registration form</h2>
  <form>
