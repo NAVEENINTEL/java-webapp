@@ -20,17 +20,13 @@ pipeline {
                 }
             }
         }
-    }
-        stages {
-        stage('Staging') {
+         stage('Staging') {
             steps {
-                   echo "Now Archiving the Artifacts...." 
+                echo "Staging"
                 }
             }
              post {
                 success {
-                    //echo "Now Archiving the Artifacts...."
-                    //archiveArtifacts artifacts: '**/*.war'
                     deploy adapters: [tomcat9(credentialsId: '26401337-7b69-4467-bff3-047ce5268db5', path: '', url: 'http://147.182.216.233:9090')], contextPath: '/', onFailure: false, war: '**/*.war'
                     //deploy adapters: [tomcat9(credentialsId: '26401337-7b69-4467-bff3-047ce5268db5', path: '', url: 'http://147.182.216.233:9091')], contextPath: '/', onFailure: false, war: '**/*.war'
                 }
