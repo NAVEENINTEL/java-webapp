@@ -20,14 +20,37 @@ pipeline {
                 }
             }
         }
-       stage('QA') {
+       stage('Staging') {
              steps {
-                 echo "QA"
+                 echo "Staging"
              }
            post {
                 success {
                     deploy adapters: [tomcat9(credentialsId: '26401337-7b69-4467-bff3-047ce5268db5', path: '', url: 'http://147.182.216.233:9090')], contextPath: '/', onFailure: false, war: '**/*.war'
                     //deploy adapters: [tomcat9(credentialsId: '26401337-7b69-4467-bff3-047ce5268db5', path: '', url: 'http://147.182.216.233:9091')], contextPath: '/', onFailure: false, war: '**/*.war'
+                }
+            }
+        }
+        stage('QA') {
+             steps {
+                 echo "QA"
+             }
+           post {
+                success {
+                    echo "QA"
+                    //deploy adapters: [tomcat9(credentialsId: '26401337-7b69-4467-bff3-047ce5268db5', path: '', url: 'http://147.182.216.233:9090')], contextPath: '/', onFailure: false, war: '**/*.war'
+                    //deploy adapters: [tomcat9(credentialsId: '26401337-7b69-4467-bff3-047ce5268db5', path: '', url: 'http://147.182.216.233:9091')], contextPath: '/', onFailure: false, war: '**/*.war'
+                }
+            }
+        }
+        stage('Production') {
+             steps {
+                 echo "Production"
+             }
+           post {
+                success {
+                    //deploy adapters: [tomcat9(credentialsId: '26401337-7b69-4467-bff3-047ce5268db5', path: '', url: 'http://147.182.216.233:9090')], contextPath: '/', onFailure: false, war: '**/*.war'
+                    deploy adapters: [tomcat9(credentialsId: '26401337-7b69-4467-bff3-047ce5268db5', path: '', url: 'http://147.182.216.233:9091')], contextPath: '/', onFailure: false, war: '**/*.war'
                 }
             }
         }
