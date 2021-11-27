@@ -7,9 +7,9 @@
  <h2>Registration form</h2>
  <form>
   <label for="username">Username:</label>
-  <input type="text" name="username" id="username" />
+  <input type="text" name="username" id="username" /><br />
   <label for="password">Password:</label>
-  <input type="password" name="password" id="password" />
+  <input type="password" name="password" id="password" /><br />
   <input type="radio" name="gender" value="male" />Male<br />
   <input type="radio" name="gender" value="female" />Female<br />
   <input type="radio" name="gender" value="other" />Other
